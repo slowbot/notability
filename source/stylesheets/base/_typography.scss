@@ -16,8 +16,8 @@
 }
 
 // Compass Vertical Rhythm setup 
-$base-font-size: 20px;
-$base-line-height: 32px;
+$base-font-size: 16px;
+$base-line-height: 26px;
 $rhythm-unit: "rem";
 $rem-with-px-fallback: true;
 
@@ -29,7 +29,7 @@ html, body {
 
 @media #{$medium-up} {
 	html, body {
-		font-size: 20px;
+		font-size: 16px;
 	}
 }
 
@@ -126,26 +126,26 @@ $type-weight: (
 #{h1, h2, h3, h4, h5, h6} {
     font-family: $base-font-family;
     margin-top: 0;
-    @include type-weight(black);
+    @include type-weight(light);
     @include margin-trailer(1);
     @include type-ligatures;
 }
-h1 {
+h1, .alpha {
     @include type-scale(xxlarge);
 }
-h2 {
+h2, .beta {
     @include type-scale(xlarge);
 }
-h3 {
+h3, .gamma {
     @include type-scale(large);
 }
-h4 {
+h4, .delta {
     @include type-scale(medium);
 }
-h5 {
+h5, .epsilon {
     @include type-scale(base);
 }
-h5 {
+h5, .zeta {
     @include type-scale(tiny);
 }
 
@@ -253,4 +253,10 @@ ul, ul li ul {
             page-break-inside: avoid;
         }
     }
-}	
+}
+
+.tinted {
+    #{h1, h2, h3, h4, h5, h6} {
+        color: #fff;
+    }
+}
