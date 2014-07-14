@@ -1,0 +1,60 @@
+.alignleft {
+	@media #{$large-up} {
+		float: left;
+		margin-right: 2em;
+		margin-bottom:  3em;
+		margin-left: -10rem;
+	}
+}
+
+.alignright {
+	@media #{$large-up} {
+		float: right;
+		margin-left: 2em;
+		margin-bottom:  3em;
+		margin-right: -10rem;
+	}
+}
+
+.relative {
+	position: relative;
+}
+
+.content {
+
+}
+
+.bright {
+	background-color: #fff;
+}
+
+.columns.collapse {
+	padding: 0;
+}
+
+%inverse-type {
+	color: #fff;
+	webkit-font-smoothing: antialiased;
+	
+	%hN, a {
+		color: #fff;
+	}
+}
+
+%inverse-button {
+	background-color: transparent;
+	border: 2px solid #fff;
+}
+
+.bright-container {
+	background-color: #fff;
+}
+
+.featured-section {
+	border-top: 2px solid $primary-color;
+	padding-top: 2em;
+}
+
+.page-section {
+	padding: 4rem 0;
+}

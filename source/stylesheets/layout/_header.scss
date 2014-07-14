@@ -1,0 +1,52 @@
+body {
+	padding-top: 1em;
+}
+
+header.header {
+	cursor: pointer;
+	position: relative;
+	width: 100%;
+	z-index: 1000 !important;
+
+	.logo {
+		&.scroll-to-fixed-fixed {
+			.logo-svg {
+				background-color: $primary-color;
+				margin-top: 0;
+
+				.letter {
+				fill: #fff;
+				}
+			}		
+		}
+	}
+
+	.logo-svg {
+		padding: 0 1em;
+		width: 160px;
+		height: 50px;
+		margin: 2em 0 2em -1em;
+		z-index: 1000 !important;
+	}
+
+	&.active {
+		.letter {
+			fill: #fff;
+		}
+	}
+}
+
+
+body.single {
+	padding-top: 0;
+
+	header.header {
+		position: absolute;
+	}
+
+	.logo-svg {
+		.letter {
+			fill: #fff;
+		}
+	}	
+}

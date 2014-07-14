@@ -1,0 +1,58 @@
+.article {
+	margin-bottom: 1em;
+	
+	.hero {
+		overflow: hidden;
+		position: relative;
+	}
+	
+	.hgroup {
+		
+	}
+	
+	// byline and meta
+	.byline {
+		
+		time {
+
+		}
+	}
+	
+	.meta {
+		
+	}
+	
+	.type {
+
+	}
+	
+	a.more {
+
+	}
+
+	// excerpt format
+	&.excerpt {
+
+		.inner {
+			padding: 1em;
+			padding-bottom: 0;
+		}
+	}
+	
+	// aside format
+	&.aside {
+		p {
+
+		}
+	
+		figure {
+			float: left; 
+			margin-right: 1em;
+		}
+	}
+
+	&.archived {
+
+	}
+}
+	
