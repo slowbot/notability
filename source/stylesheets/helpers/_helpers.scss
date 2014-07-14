@@ -20,10 +20,6 @@
 	position: relative;
 }
 
-.content {
-
-}
-
 .bright {
 	background-color: #fff;
 }
@@ -57,4 +53,21 @@
 
 .page-section {
 	padding: 4rem 0;
+}
+
+.primary-container {
+	@extend .page-section;
+	background-color: $primary-color;
+
+	p {
+		color: #fff;
+	}
+}
+
+.secondary-container {
+	background-color: $secondary-color;
+
+	p, .dim {
+		color: darken($secondary-color, 15%);
+	}
 }
