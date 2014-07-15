@@ -82,12 +82,12 @@ main {
 #slide-1 .hsContent {}
 
 /* Slide 2 */
-#slide-2 .bcg {background-image:url('../images/hero.jpg')}
+#slide-2 .bcg {background-image:url('../images/perspective.jpg')}
 #slide-2 .hsContent {}
 #slide-2 h2 {}
 
 /* Slide 3 */
-#slide-3 .bcg {background-image:url('../images/hero.jpg')}
+#slide-3 .bcg {background-image:url('../images/explore.jpg')}
 #slide-3 .hsContent {}
     #slide-3 h2 {
         color: #f2ead6;
@@ -96,7 +96,7 @@ main {
 
 /* Slide 4 */
 #slide-4 .bcg {
-    background-image:url('../images/hero.jpg');
+    background-image:url('../images/footer.jpg');
     background-position: center center;
 }
 #slide-4 .hsContent {}
@@ -129,31 +129,38 @@ main {
         min-width: 768px;
         height: 600px;
     }
+
     .hsContainer {
         width: 100%;
         height: 100%;
         overflow: hidden;
         position: relative;
     }
+
     .hsContent {
-        max-width: 700px;
+        width: 100%;
+        max-width: 100%;
         position: absolute;
-        left: 50%;
+        display: block;
+        left: 0;
         top: 50%;
-        text-align: left;
+        text-align: center;
         padding: 0;
     }
         .hsContent h2  {
             font-size: 35px;
             line-height: 38px;
+            margin-bottom: 0;
+            padding: 1em 0;
         }
         .hsContent p {
             width: 400px;
         }
+
     #slide-1 .hsContent {
-        bottom: 200px;
+        bottom: 0;
         top: auto;
-        margin-left: -80px;
+        margin-left: 0;
     }
     #slide-2 .hsContent {
         margin-left: -340px;
