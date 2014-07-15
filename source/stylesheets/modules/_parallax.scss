@@ -59,22 +59,20 @@ main {
     padding: 0 8%;
     text-align: center;
     position: relative;
-}
-.hsContent h2  {
-    color: #fff8de;
-    background-color: rgba(0,0,0,0.5);
-    padding: 10px 5px;
-    font-size: 20px;
-    line-height: 23px;
-    margin-bottom: 12px;
-}
-.hsContent p {
-    width: 80%;
-    color: #b2b2b2;
-}
-.hsContent a {
-	color: #b2b2b2;
-	text-decoration: underline;
+    
+    h2  {
+        color: #fff;
+        padding: 10px 5px;
+    }
+
+    p {
+        color: #fff;
+    }
+
+    a {
+	   color: #fff;
+	   text-decoration: underline;
+    }
 }
 
 /* Slide 1 */
@@ -82,17 +80,14 @@ main {
 #slide-1 .hsContent {}
 
 /* Slide 2 */
-#slide-2 .bcg {background-image:url('../images/perspective.jpg')}
+#slide-2 .bcg {background-image:url('../images/explore.png')}
 #slide-2 .hsContent {}
 #slide-2 h2 {}
 
 /* Slide 3 */
-#slide-3 .bcg {background-image:url('../images/explore.jpg')}
+#slide-3 .bcg {background-image:url('../images/perspective.jpg')}
 #slide-3 .hsContent {}
-    #slide-3 h2 {
-        color: #f2ead6;
-        background-color: rgba(0,0,0,0.6);
-    }
+#slide-3 h2 {}
 
 /* Slide 4 */
 #slide-4 .bcg {
@@ -100,10 +95,7 @@ main {
     background-position: center center;
 }
 #slide-4 .hsContent {}
-    #slide-4 h2 {
-        padding-left: 0;
-        padding-right: 0;
-    }
+#slide-4 h2 {}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -117,6 +109,7 @@ main {
     body, html {
         height: auto;
     }
+
     .bcg {
         background-position: center center;
         background-repeat: no-repeat;
@@ -125,6 +118,7 @@ main {
         height: 100%;
         width: 100%;
     }
+
     .section {
         min-width: 768px;
         height: 600px;
@@ -138,46 +132,68 @@ main {
     }
 
     .hsContent {
-        width: 100%;
-        max-width: 100%;
+        width: 40%;
+        max-width: 40%;
         position: absolute;
         display: block;
-        left: 0;
+        left: 2em;
         top: 50%;
         text-align: center;
         padding: 0;
-    }
-        .hsContent h2  {
-            font-size: 35px;
-            line-height: 38px;
+        
+        h2  {
             margin-bottom: 0;
             padding: 1em 0;
         }
-        .hsContent p {
-            width: 400px;
+    }    
+
+    #slide-1 {
+        .hsContent {
+            bottom: 0;
+            left: 0;
+            top: auto;
+            margin-left: 0;
+            width: 100%;
+            max-width: 100%;
         }
 
-    #slide-1 .hsContent {
-        bottom: 0;
-        top: auto;
-        margin-left: 0;
+        h2 {
+            background-color: rgba(0,0,0,0.5);
+        }
     }
-    #slide-2 .hsContent {
-        margin-left: -340px;
-        top: auto;
+
+    #slide-2 {
+        .hsContent {
+            margin-left: 0;
+            //position: fixed;
+        }
+
+        h2 {
+            background: none;
+        }
     }
-    #slide-2 h2 {
-        position: fixed;
-        top: 70%;
+    #slide-3 {
+        .hsContent {
+            margin-left: 0;
+            //position: fixed;
+        }
+
+        h2 {
+            background: none;
+        }
     }
-    #slide-3 .hsContent {
-        margin-left: -300px;
-    }
-    #slide-4 .hsContent {
-        margin-left: -340px;
-        position: fixed;
-    }
-    #slide-4 h2 {
-        background: none;
-    }
-}    
+
+    #slide-4 {
+        .hsContent {
+            width: 100%;
+            max-width: 100%;
+            margin-left: 0;
+            left: 0;
+            //position: fixed;
+        }
+
+        h2 {
+            background: none;
+        }
+    }    
+}

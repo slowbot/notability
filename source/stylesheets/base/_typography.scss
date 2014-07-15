@@ -29,7 +29,7 @@ html, body {
 
 @media #{$medium-up} {
 	html, body {
-		font-size: 16px;
+		font-size: 18px;
 	}
 }
 
@@ -39,7 +39,7 @@ html, body {
 $type-prefix: "t-";
 $type-scale: (
     tiny: (
-        font-size: 10px,
+        font-size: 14px,
         base-lines: 0.5
     ),
     small: (
@@ -51,19 +51,19 @@ $type-scale: (
         base-lines: 1
     ),
     medium: (
-        font-size: 25px,
+        font-size: 20px,
         base-lines: 1
     ),
     large: (
-        font-size: 30px,
+        font-size: 26px,
         base-lines: 1.5
     ),
     xlarge: (
-        font-size: 40px,
+        font-size: 30px,
         base-lines: 1.5
     ),
     xxlarge: (
-        font-size: 50px,
+        font-size: 40px,
         base-lines: 2
     )
 );
