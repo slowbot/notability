@@ -1,6 +1,7 @@
 //= require jquery/dist/jquery
 //= require foundation/js/foundation.min
 
-//= require jquery-scrolltofixed
-//= require classie
+//= require imagesloaded
+//= require enquire.min
+//= require skrollr
 //= require app
