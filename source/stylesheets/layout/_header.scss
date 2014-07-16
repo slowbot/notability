@@ -7,13 +7,21 @@ header.header {
 	position: absolute;
 	width: 100%;
 	z-index: 1000 !important;
+	padding-top: 2em;
 
 	.logo {
 		padding: 0 1em;
-		width: 320px;
-		height: 50px;
-		margin: 2em 0 2em -1em;
+		width: 387px;
+		height: 80px;
 		z-index: 1000 !important;
+	}
+
+	.btn-app {
+		margin-right: 1em; 
+
+		img {
+			height: 2em;
+		}
 	}
 }
 	
