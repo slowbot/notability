@@ -1,0 +1,26 @@
+.pad {
+	figure {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+@media #{$large-up} {
+	.pad {
+		position: absolute;
+		top: 4em;
+		
+		figure {
+			width: 80%;
+			margin: 0 0;
+			margin-left: -20%;
+		}
+	}	
+}
+
+.lap {
+	figure {
+		width: 80%;
+		margin: 0 auto;
+	}
+}	
