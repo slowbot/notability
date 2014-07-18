@@ -1,6 +1,6 @@
 .primary-container {
-	height: 800px;
-	height: 90vh;
+	height: 500px;
+
 	position: relative;
 	overflow: hidden;
 }
@@ -22,9 +22,13 @@
 }
 
 @media #{$medium-up} {
+	.primary-container {
+		height: 800px;
+	}
+
 	@media #{$portrait} {
 		.primary-container {
-			height: 70vh;
+			height: 700px;
 		}
 
 		.pitch {
@@ -39,7 +43,7 @@
 
 	@media #{$landscape} {
 		.primary-container {
-			height: 100vh;
+
 		}
 
 		.pad {
@@ -67,7 +71,7 @@
 
 @media #{$large-up} {
 	.primary-container {
-		height: 100vh;
+
 	}
 
 	.pad {
