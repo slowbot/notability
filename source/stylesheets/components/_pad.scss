@@ -30,10 +30,13 @@
 		.pitch {
 			@include grid-column(16);
 		}
-	}
-}
 
-@media #{$medium-up} {
+		.bcg {
+			background-attachment: scroll;
+		}
+
+	}
+
 	@media #{$landscape} {
 		.primary-container {
 			height: 100vh;
@@ -47,6 +50,11 @@
 		figure {
 			width: 800px;
 		}
+
+		.bcg {
+			background-attachment: scroll;
+		}
+
 	}
 
 	.pitch {
@@ -85,5 +93,21 @@
 	#message-3 {
 		height: 100vh;
 	}
+
+	.bcg {
+			background-attachment: fixed;
+	}
+	
+	@media #{$portrait} {
+		.bcg {
+			background-attachment: fixed;
+		}
+	}	
+
+	@media #{$landscape} {
+		.bcg {
+			background-attachment: fixed;
+		}
+	}	
 }
 
