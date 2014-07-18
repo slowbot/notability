@@ -38,7 +38,6 @@
 		.bcg {
 			background-attachment: scroll;
 		}
-
 	}
 
 	@media #{$landscape} {
@@ -101,17 +100,10 @@
 	.bcg {
 			background-attachment: fixed;
 	}
-	
-	@media #{$portrait} {
-		.bcg {
-			background-attachment: fixed;
-		}
-	}	
-
-	@media #{$landscape} {
-		.bcg {
-			background-attachment: fixed;
-		}
-	}	
 }
 
+.skroller-mobile {
+	.bcg {
+		background-attachment: scroll;
+	}
+}
