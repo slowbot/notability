@@ -16,6 +16,12 @@
 	}
 }
 
+.right-medium {
+	@media #{$medium-up} {
+		float: right;
+	}	
+}
+
 .relative {
 	position: relative;
 }

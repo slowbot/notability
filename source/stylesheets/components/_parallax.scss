@@ -17,6 +17,7 @@ h2 {
 .section {
     opacity: 0;
 	height: 360px;
+    height: 80vh;
 }
 .loaded .section,
 .no-js .section {
@@ -38,6 +39,7 @@ main {
 }
 .bcg {
     background-size: cover;
+    background-position: 50%, 50%;
     height: 100%;
     width: 100%;
 }
@@ -59,6 +61,7 @@ main {
     padding: 0 8%;
     text-align: center;
     position: relative;
+    background-color: rgba(0, 0, 0, .3);
     
     h2  {
         color: #fff;
@@ -77,7 +80,10 @@ main {
 
 /* Slide 1 */
 #slide-1 .bcg {background-image:url('../images/hero.jpg')}
-#slide-1 .hsContent {}
+#slide-1 .hsContent {
+    vertical-align: bottom;
+    padding-bottom: 20%;
+}
 
 /* Slide 2 */
 #slide-2 .bcg {background-image:url('../images/explore.png')}
@@ -94,7 +100,10 @@ main {
     background-image:url('../images/footer.jpg');
     background-position: center center;
 }
-#slide-4 .hsContent {}
+#slide-4 .hsContent { 
+    vertical-align: top;
+    padding-top: 30%;
+}
 #slide-4 h2 {}
 
 /* ==========================================================================
@@ -104,7 +113,7 @@ main {
    ========================================================================== */
 
 /* Medium devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
 
     body, html {
         height: auto;
@@ -140,6 +149,7 @@ main {
         top: 50%;
         text-align: center;
         padding: 0;
+        background-color: transparent;
         
         h2  {
             margin-bottom: 0;
@@ -155,6 +165,7 @@ main {
             margin-left: 0;
             width: 100%;
             max-width: 100%;
+            padding-bottom: 0;
         }
 
         h2 {
@@ -189,7 +200,7 @@ main {
             max-width: 100%;
             margin-left: 0;
             left: 0;
-            //position: fixed;
+            padding-top: 0;
         }
 
         h2 {

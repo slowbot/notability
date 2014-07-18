@@ -14,7 +14,10 @@
 	[class^="icon-"], [class*=" icon-"] {
 		color: rgba(#fff, .6);	
 		font-size: 2em;
-		margin-left: .5em;
+	
+		@media #{$medium-up} {
+			margin-left: .5em;
+		}	
 	}
 
 	a {

@@ -11,17 +11,37 @@ header.header {
 
 	.logo {
 		padding: 0 1em;
-		width: 387px;
-		height: 80px;
+		max-width: 275px;
+		margin: 0 auto 3em;
 		z-index: 1000 !important;
+
+		@media #{$medium-up} {
+			max-width: 387px;
+		}	
+	}
+
+	.social {
+		overflow: hidden;
+		margin-top: 1em;
+		text-align: center;
 	}
 
 	.btn-app {
-		margin-right: 1em; 
+		margin-right: 1em;
+		width: 100%;
 
 		img {
-			height: 2em;
+			height: 2.5em;
 		}
+
+		@media #{$medium-up} {
+			width: auto;
+
+			img {
+				height: 2em;
+				margin: 0 auto;
+			}
+		}	
 	}
 }
 	

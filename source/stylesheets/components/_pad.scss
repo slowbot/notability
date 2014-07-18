@@ -1,16 +1,67 @@
 .primary-container {
 	height: 800px;
+	height: 90vh;
 	position: relative;
+	overflow: hidden;
 }
 
-.pad {
+.pad, .lap {
+	position: absolute;
+	bottom: -2em;
+
 	figure {
 		width: 80%;
 		margin: 0 auto;
 	}
 }
 
+.lap {
+	figure {
+		width: auto;
+	}
+}
+
+@media #{$medium-up} {
+	@media #{$portrait} {
+		.primary-container {
+			height: 70vh;
+		}
+
+		.pitch {
+			@include grid-column(16);
+		}
+	}
+}
+
+@media #{$medium-up} {
+	@media #{$landscape} {
+		.primary-container {
+			height: 100vh;
+		}
+
+		.pad {
+			position: absolute;
+			right: 50%; 
+			top: 6em;
+
+		figure {
+			width: 800px;
+		}
+	}
+
+	.pitch {
+			@include grid-column(6);
+			float: right;
+			margin-top: 4em;
+		}
+	}
+}
+
 @media #{$large-up} {
+	.primary-container {
+		height: 100vh;
+	}
+
 	.pad {
 		position: absolute;
 		right: 50%; 
@@ -19,18 +70,20 @@
 		figure {
 			width: 800px;
 		}
-	}	
-}
-
-.lap {
-	figure {
-		width: 80%;
-		margin: 0 auto;
 	}
-}
 
-.pitch {
-	@media #{$large-up} {
+	.lap {
+		position: relative;
+	}
+
+	.pitch {
+		@include grid-column(6);
+		float: right;
 		top: 6em;
 	}
+
+	#message-3 {
+		height: 100vh;
+	}
 }
+

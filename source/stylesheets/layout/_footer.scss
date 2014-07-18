@@ -10,6 +10,15 @@
 	.underlined {
 		border-bottom-color: #fff;
 	}
+
+	.social {
+		overflow: hidden;
+		margin: 0 20%;
+		
+		a {
+			width: 25%;
+		}
+	}
 }
 
 .footer-menu {
