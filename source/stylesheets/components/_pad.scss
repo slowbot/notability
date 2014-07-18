@@ -100,10 +100,11 @@
 	.bcg {
 			background-attachment: fixed;
 	}
-}
 
-.skroller-mobile {
-	.bcg {
+	.skroller-mobile .bcg, .touch .bcg {
 		background-attachment: scroll;
+		background-position: 50%, 50%; 
 	}
 }
+
+  

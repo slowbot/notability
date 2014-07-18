@@ -129,6 +129,11 @@ main {
         width: 100%;
     }
 
+    .skroller-mobile .bcg, .touch .bcg {
+        background-attachment: scroll;
+        background-position: 50%, 50%; 
+    }
+
     .section {
         min-width: 768px;
         height: 600px;
