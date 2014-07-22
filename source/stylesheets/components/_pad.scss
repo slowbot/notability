@@ -8,6 +8,7 @@
 	figure {
 		width: 80%;
 		margin: 0 auto;
+		margin-bottom: -6em;
 	}
 }
 
@@ -21,6 +22,39 @@
 }
 
 @media #{$medium-up} {
+	.pitch {
+		h2 svg {
+			height: 200px;
+		}
+
+		p {
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	#message-1 {
+
+	}
+
+	#message-2 {
+		h2 svg {
+			height: 120px;
+		}
+
+		p svg {
+			height: 100px;
+		}
+	}
+
+	#message-3 {
+		height: 900px;
+	}
+}
+
+@media #{$large-up} {
+
 	.primary-container {
 		height: 800px;
 	}
@@ -44,8 +78,12 @@
 			height: 200px;
 		}
 
-		p svg {
-			height: 100px;
+		p {
+ 			width: 100%;
+
+			svg {
+				height: 100px;
+			}
 		}
 	}
 
@@ -59,12 +97,6 @@
 		h2 svg {
 			height: 120px;
 		}
-	}	
-}
-
-@media #{$large-up} {
-	.pitch {
-		top: 4em;
 	}
 
 	#message-3 {

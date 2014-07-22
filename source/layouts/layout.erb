@@ -12,9 +12,17 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
   
-  <body class="<%= page_classes %>">
+  <body class="loading <%= page_classes %>">
    <!--  <%= partial "partials/_pattern-style-menu" %> -->
     <%= partial "partials/_header" %>
+
+    <div id="preload">
+      <img src="img/bcg_slide-1.jpg">
+      <img src="img/bcg_slide-2.jpg">
+      <img src="img/bcg_slide-3.jpg">
+      <img src="img/bcg_slide-4.jpg">
+    </div>
+
     <%= yield %>
     <%= partial "partials/_footer" %>
     <%= javascript_include_tag  "all" %>

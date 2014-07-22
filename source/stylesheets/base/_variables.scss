@@ -1,8 +1,8 @@
 // $BaseType
 // -------------------------------------//
 
-$base-font-size: 16px;
-$base-line-height: 24px;
+$base-font-size: 16px !default;
+$base-line-height: 24px !default;
 
 $h1-font-size: rem-calc(44) !default;
 $h2-font-size: rem-calc(37) !default;
@@ -15,6 +15,7 @@ $font-family: "adelle-sans", Helvetica, Arial, sans-serif;
 $base-font-family: $font-family;
 $sans-font-family: $font-family;
 $alt-font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+
 // $Brand Colors
 
 $primary-color:     #1383c3;

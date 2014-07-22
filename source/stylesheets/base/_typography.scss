@@ -72,8 +72,8 @@ $type-weight: (
     thin: 200,
     light: 300,
     regular: 400,
-    bold: 700,
-    black: 900
+    bold: 600,
+    black: 700
 );
 
 // A type scaling utility $type-scale map with the predefined values
@@ -126,7 +126,7 @@ $type-weight: (
 #{h1, h2, h3, h4, h5, h6} {
     font-family: $base-font-family;
     margin-top: 0;
-    @include type-weight(light);
+    @include type-weight(regular);
     @include margin-trailer(1);
     @include type-ligatures;
 }
@@ -155,6 +155,7 @@ p {
     @include word-break(break-word);
     @include hyphens(auto);
     @include type-ligatures;
+    @include type-weight(light);
     font-family: $font-family;
 }
 

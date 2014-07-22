@@ -4,6 +4,7 @@
 	padding-top: 1.5em;
 	
 	%hN, p, a {
+		@include type-weight(thin);
 		color: #fff;
 	}
 
