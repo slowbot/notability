@@ -92,7 +92,9 @@ main {
 
 /* Slide 2 */
 #slide-2 .bcg {background-image:url('../images/explore.png')}
-#slide-2 .hsContent {}
+#slide-2 .hsContent {
+    background-color: rgba(0, 0, 0, .6);
+}
 #slide-2 {
         h2 {}
         svg {
@@ -225,8 +227,8 @@ main {
 
     #slide-2 {
         .hsContent {
+            background-color: transparent;
             margin-left: 0;
-            //position: fixed;
         }
 
         h2 {
@@ -236,7 +238,6 @@ main {
     #slide-3 {
         .hsContent {
             margin-left: 0;
-            //position: fixed;
         }
 
         h2 {
