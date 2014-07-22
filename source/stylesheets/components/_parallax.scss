@@ -16,9 +16,9 @@ h2 {
 }
 .section {
     opacity: 0;
-	height: 360px;
-    height: 80vh;
+	height: 520px;
 }
+
 .loaded .section,
 .no-js .section {
 	opacity: 1;
@@ -92,7 +92,7 @@ main {
 }
 
 /* Slide 2 */
-#slide-2 .bcg {background-image:url('../images/explore.png')}
+#slide-2 .bcg {background-image:url('../images/explore.jpg')}
 #slide-2 .hsContent {
     background-color: rgba(0, 0, 0, .6);
 }
