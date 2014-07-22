@@ -1,76 +1,28 @@
 .primary-container {
-	height: 500px;
-
+	height: auto;
 	position: relative;
 	overflow: hidden;
 }
 
-.pad, .lap {
-	position: absolute;
-	bottom: -2em;
-
+.pad {
 	figure {
 		width: 80%;
 		margin: 0 auto;
 	}
 }
 
-.lap {
-	figure {
-		width: auto;
-	}
+.pitch, %pitch {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.sale {
+	@extend %pitch;
 }
 
 @media #{$medium-up} {
 	.primary-container {
 		height: 800px;
-	}
-
-	@media #{$portrait} {
-		.primary-container {
-			height: 700px;
-		}
-
-		.pitch {
-			@include grid-column(16);
-		}
-
-		.bcg {
-			background-attachment: scroll;
-		}
-	}
-
-	@media #{$landscape} {
-		.primary-container {
-
-		}
-
-		.pad {
-			position: absolute;
-			right: 50%; 
-			top: 6em;
-
-		figure {
-			width: 800px;
-		}
-
-		.bcg {
-			background-attachment: scroll;
-		}
-
-	}
-
-	.pitch {
-			@include grid-column(6);
-			float: right;
-			margin-top: 4em;
-		}
-	}
-}
-
-@media #{$large-up} {
-	.primary-container {
-
 	}
 
 	.pad {
@@ -83,22 +35,44 @@
 		}
 	}
 
-	.lap {
-		position: relative;
-	}
-
 	.pitch {
 		@include grid-column(6);
 		float: right;
-		top: 6em;
+		margin-top: 4em;
+
+		h2 svg {
+			height: 200px;
+		}
+
+		p svg {
+			height: 100px;
+		}
+	}
+
+	#message-1 {
+		.pitch {
+			margin-top: 6em;
+		}
+	}
+
+	#message-2 {
+		h2 svg {
+			height: 120px;
+		}
+	}	
+}
+
+@media #{$large-up} {
+	.pitch {
+		top: 4em;
 	}
 
 	#message-3 {
-		height: 100vh;
+		height: 900px;
 	}
 
 	.bcg {
-			background-attachment: fixed;
+		background-attachment: fixed;
 	}
 
 	.skroller-mobile .bcg, .touch .bcg {

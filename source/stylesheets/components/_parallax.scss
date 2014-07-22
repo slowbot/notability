@@ -66,11 +66,15 @@ main {
     
     h2  {
         color: #fff;
-        padding: 10px 5px;
+        
+        svg {
+            height: 300px;
+        }
     }
 
     p {
         color: #fff;
+        width: 100%;
     }
 
     a {
@@ -89,7 +93,12 @@ main {
 /* Slide 2 */
 #slide-2 .bcg {background-image:url('../images/explore.png')}
 #slide-2 .hsContent {}
-#slide-2 h2 {}
+#slide-2 {
+        h2 {}
+        svg {
+            fill: #ef615f;
+        }
+    }
 
 /* Slide 3 */
 #slide-3 .bcg {background-image:url('../images/perspective.jpg')}
@@ -115,6 +124,25 @@ main {
 
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 769px) {
+    
+    $left-right-graident: -webkit-linear-gradient(right, transparent 50%, rgba(0,0,0, .6));
+    $top-bottom-graident: -webkit-linear-gradient(bottom, transparent 50%, rgba(0,0,0, .8));
+
+    %tint {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        
+        background-image: $left-right-graident;
+        -moz-transition: background .3s linear;
+        -webkit-transition: background .3s linear;
+        -o-transition: background .3s linear;
+        transition: background .3s linear;
+    }
 
     body, html {
         height: auto;
@@ -144,6 +172,10 @@ main {
         height: 100%;
         overflow: hidden;
         position: relative;
+
+        &:before {
+            @extend %tint;
+        }
     }
 
     .hsContent {
@@ -152,18 +184,29 @@ main {
         position: absolute;
         display: block;
         left: 2em;
-        top: 50%;
+        top: 40%;
         text-align: center;
         padding: 0;
         background-color: transparent;
-        
+
         h2  {
             margin-bottom: 0;
-            padding: 1em 0;
+            padding: 0;
+        }
+
+        p {
+            max-width: 90%;
+            margin: 0 auto;
         }
     }    
 
     #slide-1 {
+        .hsContainer {
+            &:before {
+                background-image: none;
+            }
+        }  
+
         .hsContent {
             bottom: 0;
             left: 0;
@@ -176,6 +219,7 @@ main {
 
         h2 {
             background-color: rgba(0,0,0,0.5);
+            padding: 1em 0;
         }
     }
 
@@ -201,6 +245,12 @@ main {
     }
 
     #slide-4 {
+        .hsContainer {
+            &:before {
+                background-image: $top-bottom-graident;
+            }
+        }   
+
         .hsContent {
             width: 100%;
             max-width: 100%;
