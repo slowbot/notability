@@ -1,12 +1,23 @@
 .footer {
 	background-color: #000;
 	color: #fff;
-	padding-top: 1.5em;
+	padding-top: .85em;
 	position: relative;
 
 	%hN, p, a {
 		@include type-weight(thin);
 		color: #fff;
+		margin-bottom: .85em;
+	}
+
+	p {
+		font-size: .75em;
+		margin-right: 1em;
+	}
+
+	a {
+		color: rgba(#fff, .4);
+		margin: 0 .5em;
 	}
 
 	.underlined {
@@ -16,34 +27,15 @@
 	.social {
 		overflow: hidden;
 		margin: 0 20%;
+		margin-bottom: 1em;
 		
 		a {
 			width: 25%;
+			margin: 0;
 		}
 	}
 }
 
 .footer-menu {
-	margin: 2em 0 3em 0;
-	overflow: hidden;
-	
-	ul {
-		margin: 0;
-	}
-	
-	li {
-		font-size: .925em;
-		list-style: none;
-		line-height: 2em;
-		
-		&.column {
-			@media #{$medium-up} {
-				@include grid-column($columns:2);
-			}
-		}
-		
-		a {
-			font-weight: 400;
-		}
-	}
+	font-size: .75em;
 }
