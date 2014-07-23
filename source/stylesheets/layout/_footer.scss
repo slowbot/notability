@@ -2,7 +2,8 @@
 	background-color: #000;
 	color: #fff;
 	padding-top: 1.5em;
-	
+	position: relative;
+
 	%hN, p, a {
 		@include type-weight(thin);
 		color: #fff;
