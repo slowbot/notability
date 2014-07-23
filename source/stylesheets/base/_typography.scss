@@ -152,11 +152,12 @@ h5, .zeta {
 // Paragraphs
 p {
     @include margin-trailer(1);
-    @include word-break(break-word);
-    @include hyphens(auto);
+    // @include word-break(break-word);
+    // @include hyphens(auto);
     @include type-ligatures;
     @include type-weight(light);
     font-family: $font-family;
+    
 }
 
 // Small

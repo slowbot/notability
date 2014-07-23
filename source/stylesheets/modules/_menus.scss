@@ -12,7 +12,7 @@
 
 .social {
 	[class^="icon-"], [class*=" icon-"] {
-		color: rgba(#fff, .6);	
+		
 		font-size: 2em;
 	
 		@media #{$medium-up} {
@@ -23,5 +23,10 @@
 	a {
 		float: left;
 		display: block;
+		color: rgba(#fff, .6);
+
+		&:hover {
+			color: rgba(#fff, .95);
+		}
 	}
 }
