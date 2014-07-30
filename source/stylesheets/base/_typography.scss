@@ -69,9 +69,9 @@ $type-scale: (
 );
 
 $type-weight: (
-    thin: 200,
-    light: 300,
-    regular: 400,
+    thin: 100,
+    light: 200,
+    regular: 300,
     bold: 600,
     black: 700
 );
@@ -155,7 +155,7 @@ p {
     // @include word-break(break-word);
     // @include hyphens(auto);
     @include type-ligatures;
-    @include type-weight(light);
+    @include type-weight(thin);
     font-family: $font-family;
     
 }
