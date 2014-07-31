@@ -21,7 +21,17 @@
 	}
 }
 
+.sale {
+	@extend %pitch;
+}
+
+#message-1 {
+
+}	
+
 #message-2 {
+	background-color: #004d99;
+
 	h2 svg {
 		height: 120px;
 	}
@@ -31,9 +41,10 @@
 	}
 }
 
-.sale {
-	@extend %pitch;
+#message-3 {
+	background-color: #003f72;
 }
+
 
 @media #{$medium-up} {
 	.pitch {
