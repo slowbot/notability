@@ -1,0 +1,31 @@
+--- 
+footer:
+  copyright: "© 2014 Ginger Labs, Inc. All rights reserved. Notability is a registered trademark of Ginger Labs, Inc."
+meta:
+  title: Notability
+slides: 
+  details: 
+    content: ~
+    title: ~
+  explore:
+    content: "<p>Prototype with your hands. Experiment with different tools to create beautiful, hand-crafted notes.</p><p>From first to final draft: scale, rotate, recolor,and repeat.</p>"
+    title: ~
+  finalize:
+    content: "<p>Zoom in on the specifics, or focus on the big picture.</p><p>Now you are ready to share great ideas with Google Drive, AirDrop, Email and Dropbox.</p>"
+    title: ~
+  home:
+    title: "Fall in love with note taking."
+    content: ~
+  notes:
+    content: "<p>At home, in the office, or on the road, your notes are always with you, thanks to iCloud.</p>"
+    title: "All your notes, one place."
+  perspective: 
+    content: "<p>Receive verbal and written comments from your team.</p><p>Review audio comments that are linked to written feedback on your iPad, iPhone and Mac.</p>"
+    title: ~
+  testimonial: 
+    cite: "- Apple ®"
+    content: '<p class="delta">“We rely on this sleek powerful note-taker to annotate documents, record lectures, sketch illustrations, and more.”</p>'
+    title: ~
+  thoughts: 
+    content: "<p>Combine handwriting, photos and typing to  bring your projects to life.</p><p>Add as much detail as you like with a variety of colors and fonts.</p>"
+    title: ~
