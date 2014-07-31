@@ -94,7 +94,11 @@ main {
 /* Slide 1 */
 #slide-1 {
     .bcg { 
-        background-image:url('../images/hero.jpg');
+        background-image:url('../images/hero-sm.jpg');
+
+        @media #{$large-up} {
+            background-image:url('../images/hero.jpg');
+        }
     }
 
     .hsContent {
@@ -112,7 +116,12 @@ main {
 /* Slide 2 */
 #slide-2 {
     .bcg {
-        background-image:url('../images/explore.jpg')}
+        background-image:url('../images/explore-sm.jpg');
+
+        @media #{$large-up} {
+            background-image:url('../images/explore.jpg');
+        }
+    }
     
     .hsContent {
         background-color: rgba(0, 0, 0, .6);
@@ -126,13 +135,25 @@ main {
 }   
 
 /* Slide 3 */
-#slide-3 .bcg {background-image:url('../images/perspective.jpg')}
+#slide-3 .bcg {
+    background-image:url('../images/perspective-sm.jpg');
+    
+    @media #{$large-up} {
+        background-image:url('../images/perspective.jpg');
+    }
+}
+
 #slide-3 .hsContent {}
 #slide-3 h2 {}
 
 /* Slide 4 */
 #slide-4 .bcg {
-    background-image:url('../images/footer.jpg');
+    background-image:url('../images/footer-sm.jpg');
+    
+    @media #{$large-up} {
+        background-image:url('../images/footer.jpg');
+    }
+        
     background-position: center center;
 }
 
