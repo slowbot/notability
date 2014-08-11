@@ -83,6 +83,7 @@ main {
     p {
         color: #fff;
         width: 100%;
+        padding: 0 1em;
     }
 
     a {
@@ -143,7 +144,9 @@ main {
     }
 }
 
-#slide-3 .hsContent {}
+#slide-3 .hsContent {
+    background-color: rgba(0, 0, 0, .5);
+}
 #slide-3 h2 {}
 
 /* Slide 4 */
@@ -245,7 +248,7 @@ main {
 
 @media #{$large-up} {
     
-    $left-right-graident: -webkit-linear-gradient(right, transparent 50%, rgba(0,0,0, .6));
+    $left-right-graident: -webkit-linear-gradient(right, transparent 50%, rgba(0,0,0, .8));
     $top-bottom-graident: -webkit-linear-gradient(bottom, transparent 50%, rgba(0,0,0, .8));
 
     %tint {
@@ -330,6 +333,7 @@ main {
     #slide-3 {
         .hsContent {
             margin-left: 0;
+            background-color: transparent;
         }
 
         h2 {
