@@ -9,9 +9,9 @@ header.header {
 	padding-top: 2em;
 
 	.logo {
-		padding: 0 1em;
+		padding: 0;
 		max-width: 275px;
-		margin: 0 auto 3em;
+		margin: 0 auto;
 		z-index: 1000 !important;
 
 		@media #{$medium-up} {

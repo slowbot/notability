@@ -227,6 +227,20 @@ main {
         }
     }
 
+    #slide-3 {
+        .hsContent {
+            p {
+                max-width: 100%;
+            }
+        }    
+    }    
+
+    // #slide-4 {
+    //     p {
+    //         width: 60%;
+    //     }
+    // }    
+
     .buttons {
         position: relative;
         width: 100%;
@@ -354,6 +368,7 @@ main {
             margin-left: 0;
             left: 0;
             padding-top: 0;
+            top: 30%;
         }
 
         h2 {
@@ -361,16 +376,17 @@ main {
         }
 
         p {
-            width: 40%;
+            width: 60%;
             margin-left: auto;
             margin-right: auto;
         }
-
-    } 
-
-    .buttons {
-        top: -150px;
-        left: 0;
-        position: absolute;
-    }    
+    }
 }
+
+@media #{$xlarge-up} {
+    #slide-4 {
+        p {
+            width: 40%;
+        }
+    }    
+}    

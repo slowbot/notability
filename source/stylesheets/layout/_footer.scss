@@ -12,7 +12,10 @@
 
 	p {
 		font-size: .75em;
-		margin-right: 1em;
+		
+		@media #{$medium-up} {
+			margin-right: 1em;
+		}	
 	}
 
 	a {
@@ -34,8 +37,30 @@
 			margin: 0;
 		}
 	}
+
+	.buttons {
+		top: 0;
+
+    @media #{$medium-up} {
+      top: -150px;
+    }
+
+		a {
+			display: block;
+			margin: 2em;
+
+			@media #{$medium-up} {
+				display: inline-block;
+				margin: 0 2em;
+			}	
+		}
+	}   
 }
 
 .footer-menu {
 	font-size: .75em;
+
+	@media #{$medium-up} {
+		float: right;
+	}	
 }
