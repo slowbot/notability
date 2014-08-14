@@ -74,8 +74,16 @@
 	}
 
 	#message-3 {
-		height: 900px;
+		height: 600px;
 		padding-top: 2.5rem;
+
+		figure {
+			margin: 0 3em;
+
+			img {
+				max-height: 600px;
+			}
+		}
 	}
 }
 
@@ -127,6 +135,10 @@
 
 	#message-3 {
 		height: 900px;
+		
+		figure {
+			margin: 0;
+		}
 	}
 
 	.bcg {
@@ -139,4 +151,14 @@
 	}
 }
 
+@media #{$xlarge-up} {
+	#message-3 {
+		figure {
+			img {
+				max-width: none;
+				max-height: 700px;
+			}
+		}
+	}	
+}	
   
