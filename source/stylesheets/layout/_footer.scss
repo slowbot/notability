@@ -12,7 +12,7 @@
 
 	p {
 		font-size: .75em;
-		
+
 		@media #{$medium-up} {
 			margin-right: 1em;
 		}	
@@ -21,6 +21,7 @@
 	a {
 		color: rgba(#fff, .4);
 		margin: 0 .5em;
+		white-space: nowrap;
 	}
 
 	.underlined {

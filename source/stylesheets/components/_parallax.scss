@@ -165,7 +165,9 @@ main {
     padding-top: 10%;
 }
 
-#slide-4 h2 {}
+#slide-4 p:last-of-type {
+    letter-spacing: -.05em;
+}
 
 .buttons {
     margin: 0 auto;
@@ -390,7 +392,7 @@ main {
     #slide-4 {
 
         .hsContent {
-            top: 50%;
+            top: 40%;
             margin-bottom: 4rem;
         }
             
