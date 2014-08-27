@@ -360,6 +360,8 @@ main {
             &:before {
                 background-image: $top-bottom-graident;
             }
+
+
         }   
 
         .hsContent {
@@ -368,7 +370,7 @@ main {
             margin-left: 0;
             left: 0;
             padding-top: 0;
-            top: 30%;
+            top: 42%;
         }
 
         h2 {
@@ -376,6 +378,7 @@ main {
         }
 
         p {
+            font-size: 1.125rem;
             width: 60%;
             margin-left: auto;
             margin-right: auto;
@@ -385,6 +388,12 @@ main {
 
 @media #{$xlarge-up} {
     #slide-4 {
+
+        .hsContent {
+            top: 50%;
+            margin-bottom: 4rem;
+        }
+            
         p {
             width: 40%;
         }
