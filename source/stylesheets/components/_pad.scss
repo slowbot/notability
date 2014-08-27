@@ -43,6 +43,10 @@
 
 #message-3 {
 	background-color: #004d99;
+
+	figure {
+		margin: 0 1em;
+	}	
 }
 
 
@@ -100,6 +104,7 @@
 
 		figure {
 			width: 800px;
+			margin: 0 3em;
 		}
 	}
 
@@ -137,7 +142,7 @@
 		height: 900px;
 		
 		figure {
-			margin: 0;
+			margin: 0 3em;
 		}
 	}
 
@@ -154,6 +159,8 @@
 @media #{$xlarge-up} {
 	#message-3 {
 		figure {
+			margin: 0 3em;
+
 			img {
 				max-width: none;
 				max-height: 700px;
