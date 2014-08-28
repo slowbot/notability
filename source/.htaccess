@@ -1,3 +1,2 @@
 ErrorDocument 404 http://www.gingerlabs.com/
 Redirect 301 /blog http://gingerlabsinc.tumblr.com
-Redirect 301 /help http://gingerlabs.com/help/mac-help.html
