@@ -7,7 +7,8 @@
 	%hN, p, a {
 		@include type-weight(thin);
 		color: #fff;
-		margin-bottom: .85em;
+		margin-bottom: .75em;
+		line-height: 2em;
 	}
 
 	p {
@@ -32,10 +33,42 @@
 		overflow: hidden;
 		margin: 0 20%;
 		margin-bottom: 1em;
+
+		@media #{$medium-up} {
+			margin: 0 10%;
+			margin-bottom: 0;
+		}	
+
+		@media #{$large-up} {
+			margin: 0 20%;
+		}	
 		
 		a {
 			width: 25%;
 			margin: 0;
+		}
+	}
+
+	.copy-row {
+		@media #{$medium-up} {
+			height: 2em;
+		}
+	}
+
+	.copy {
+		text-align: center;
+		margin-right: 0;
+
+		@media #{$large-up} {
+			float: left;
+			text-align: left;
+			margin-right: 1em;
+		}	
+	}
+
+	.button-row {
+		@media #{$medium-up} {
+			height: 0;
 		}
 	}
 
@@ -60,8 +93,9 @@
 
 .footer-menu {
 	font-size: .75em;
+	text-align: center;
 
-	@media #{$medium-up} {
+	@media #{$large-up} {
 		float: right;
 	}	
 }
